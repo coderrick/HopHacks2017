@@ -1,0 +1,77 @@
+<!-- Latest compiled and minified CSS -->
+
+
+<!--Instruction Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>How it Works</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+ 
+</head>
+<style>
+	.image-container {
+	  display: flex;
+	  justify-content: center;
+	}
+	#next{
+		margin-left: 925px;
+	}
+	#bigger li{
+		font-size:16px;
+	}
+</style>
+<div class="container">
+<h2>How it Works</h2>
+</div>
+
+
+<!--Progress bar-->
+<div class="container">
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+			20%
+		</div>
+	</div>
+	<ol id="bigger">
+		<li>You will answer question by question while keeping your head still in front of the camera</li>
+		<li>Baseline Test: Click and answer 10 questions one by one
+			<ul>
+				<li>5 Truths</li>
+				<li>5 Lies</li>
+			</ul>
+		</li>
+		<li>Machine learning model will be trained based on:
+			<ul>
+				<li>Tone Analysis</li>
+				<li>Eye Tracking</li>
+				<li>EEG Waves</li>
+				<li>Blink Pattern</li>
+			</ul>
+		</li>
+		<li>Actual Lie Detection Test will begin after training</li>
+		<li><b>Good Luck!<b></li>
+	</ol>
+	<div class="image-container">
+	  <img src="/static/meme.png"/>
+	</div>
+	
+	<form action="/baseline">
+		<div>
+			<button type="submit" class="btn-lg btn-success" id="next">Start Baseline Test</button>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
